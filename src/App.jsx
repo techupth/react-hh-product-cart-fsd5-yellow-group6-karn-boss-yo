@@ -8,7 +8,6 @@ function App() {
   const addProductToCart = (product) => {
     const newCartProduct = [...cartProduct]
     const existingProductIndex = newCartProduct.findIndex((p) => p.id === product.id);
-    console.log(existingProductIndex)
     if (existingProductIndex !== -1) {
       newCartProduct[existingProductIndex].quantity += 1;
     } else {
